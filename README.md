@@ -1,2 +1,1 @@
-# proj-rtos
-Systemy czasu rzeczywistego - projekt
+# Systemy czasu rzeczywistego - projekt

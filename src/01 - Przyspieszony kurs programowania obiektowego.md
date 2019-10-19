@@ -72,7 +72,7 @@ for (auto itr = l4.begin(); itr != l4.end(); itr++) {
 Dla kolekcji możliwe jest także używanie skróconego zapisu do przeglądania:
 ```cpp
 for(int num : l4) {
-    cout << l4 << endl;                
+    cout << num << endl;                
 }
 ```
 

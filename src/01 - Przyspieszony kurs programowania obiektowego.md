@@ -17,9 +17,13 @@ string s3 = s1 + " " + s2 + "!";
 cout << s3 << endl;
 ```
 Dołączyć należy nagłówek `<string>`. Typ ten jest w pełni kompatybilny ze strumieniami, np. `cin`, `cout`.
+
 Szczegółowy opis:
+
 https://docs.google.com/document/d/1BqjPnThxld-uuXN3Lh5Gk5kmpaAcQ5zmAC6FP1hhgAE/
+
 Dokumentacja:
+
 http://www.cplusplus.com/reference/string/string/
 
 ### Kolekcje:

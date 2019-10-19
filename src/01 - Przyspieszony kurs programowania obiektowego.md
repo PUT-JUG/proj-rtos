@@ -61,22 +61,25 @@ l4.push_front(100);           // dodaje element na poczatku listy
 Aby przejrzeć listę możemy wykorzystać iteratory - specjalny typ wskaźników na poszczególne elementy:
 ```cpp
 for (auto itr = l4.begin(); itr != l4.end(); itr++) {
-   cout << *itr << endl;                
+    cout << *itr << endl;                
 }
 ```
 
 Dla kolekcji możliwe jest także używanie skróconego zapisu do przeglądania:
 ```cpp
 for(int num : l4) {
-   cout << l4 << endl;                
+    cout << l4 << endl;                
 }
 ```
 
 Przy przekazywaniu kontenera do funkcji warto użyć referencji (np. `void funkcja(vector<int> &parametr)`) aby uniknąć kopiowania całego kontenera w pamięci.
 
 Szczegółowy opis kontenerów:
+
 https://docs.google.com/document/d/1FHCbT4CQDwPJYqGo5htaAJNrdc6Q48l83Nw9ozKlvHc/
+
 Dokumentacja:
+
 http://www.cplusplus.com/reference/stl/
 
 ### ❗️Zadanie❗️
@@ -89,9 +92,9 @@ Struktura danych to zbiór kilku zmiennych (nazywanych w strukturze polem) zgrup
 
 ```cpp
 struct struct_type {
-        member_type1 member_name1;
-        member_type2 member_name2;
-        member_type3 member_name3;
+    member_type1 member_name1;
+    member_type2 member_name2;
+    member_type3 member_name3;
 };
 ```
 gdzie:
@@ -103,9 +106,9 @@ Przykład stworzenia struktury:
 
 ```cpp
 struct pet {
-        string name;
-        int age;
-        double weight;
+    string name;
+    int age;
+    double weight;
 };
 ```
 Powyższy kod deklaruje nowy **typ** (jak `int`, czy `double`) - o nazwie `pet`, który zawiera trzy pola - nazwę (`name`, typu `string`), wiek (`age`, typu `int`) oraz wagę (`weight`, typu `double`). Dzięki zastosowaniu struktury powstaje logiczne powiązanie tych trzech wartości.
@@ -125,8 +128,11 @@ cout << zwierzatko_kolegi.name << endl;
 ```
 
 Szczegółowy opis:
+
 https://docs.google.com/document/d/1vpNSOhQV_OUtg4TmRppj3k1QYYZVWPRML9LA3AGk5x4/
-Zadanie:
+
+### ❗️Zadanie❗️
+
 Zaprojektuj strukturę Osoba przechowującą informacje: imię, nazwisko, wiek, waga, wzrost. W programie głównym utwórz trzy obiekty powyższego typu przy czym dwa z nich wypełnij danymi w kodzie programu, a trzecią danymi wczytanymi od użytkownika.
 
 Dodaj wszystkie stworzone obiekty do wektora.
@@ -142,9 +148,9 @@ Przeniesienie powyższego przykładu struktury na klasę wyglądałoby następuj
 ```cpp
 class Pet {
 public:
-        string name;
-        int age;
-        double weight;
+    string name;
+    int age;
+    double weight;
 };
 ```
 Użycie klas może wyglądać identycznie jak w przypadku struktur:
@@ -159,14 +165,14 @@ Dodanie do klasy metody wyświetlającej informacje:
 ```cpp
 class Pet {
 public:
-        string name;
-        int age;
-        double weight;
-     void print() {
-           cout << "Imie: " << name << endl;
-           cout << "Wiek: " << age << endl;
-           cout << "Masa: " << weight << endl;
-     }
+    string name;
+    int age;
+    double weight;
+    void print() {
+        cout << "Imie: " << name << endl;
+        cout << "Wiek: " << age << endl;
+        cout << "Masa: " << weight << endl;
+    }
 };
 ```
 
@@ -181,6 +187,7 @@ zwierzatko.print();
 ```
 
 Zwróć uwagę na słowo kluczowe `public`. Oznacza ono, że pola i metody umieszczone pod nim są dostępne dla programisty “spoza klasy”. Pozostałe poziomy dostępu to `private` i `protected`. Zwyczajowo wszystkie pola przechowujące informacje o klasie są chronione, a dostęp do nich odbywa się przez odpowiednie metody. Dzięki temu osoba projektująca klasę ma pełną kontrolę nad tym, co programista jej używający umieści w poszczególnych polach. Dodatkowo, klasy mogą mieć kostruktor i destruktor, czyli specjalne metody wywoływane w momencie tworzenia i usuwania obiektu. Mogą one być przydatne np. w nadawaniu domyślnych wartości.
+
 ```cpp
 class Pet {
 public:
@@ -195,9 +202,9 @@ public:
            cout << "Masa: " << weight << endl;
      }
 private:
-        string name;
-        int age;
-        double weight;
+    string name;
+    int age;
+    double weight;
 };
 ```
 
@@ -220,12 +227,12 @@ Gdybyśmy chcieli rozdzielić klasę na plik nagłówkowy (`.h`) i źródłowy (
 
 class Pet {
 public:
-     Pet();
-     void print();
+    Pet();
+    void print();
 private:
-        string name;
-        int age;
-        double weight;
+    string name;
+    int age;
+    double weight;
 };
 ```
 
@@ -235,19 +242,20 @@ private:
 #include "Pet.h"
 
 Pet::Pet() {
-     name = "Bezimienny";
-     age = 0;
-     weight = 3.14;
+    name = "Bezimienny";
+    age = 0;
+    weight = 3.14;
 }
 void Pet::print() {
-     cout << "Imie: " << name << endl;
-     cout << "Wiek: " << age << endl;
-     cout << "Masa: " << weight << endl;
+    cout << "Imie: " << name << endl;
+    cout << "Wiek: " << age << endl;
+    cout << "Masa: " << weight << endl;
 }
 ```
 
 Szczegółowy opis:
-https://docs.google.com/document/d/17aA533K144GK_fwrHWhbMZsgfv5nTesmA3dDgR_3VVc/
+
+http://jug.put.poznan.pl/lab-ie-2/pl/Lab%2001%20-%20wstep%20do%20klas.html
 
 ***
 Autor: *Jakub Tomczyński*

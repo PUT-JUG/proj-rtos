@@ -259,7 +259,7 @@ void Pet::print() {
 
 Szczegółowy opis:
 
-http://jug.put.poznan.pl/lab-ie-2/pl/Lab%2001%20-%20wstep%20do%20klas.html
+Dodatkowe materiały: http://jug.put.poznan.pl/lab-psio/
 
 ***
 Autor: *Jakub Tomczyński*

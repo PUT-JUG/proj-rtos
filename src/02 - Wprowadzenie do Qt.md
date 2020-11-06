@@ -12,11 +12,11 @@ Dostarczane jest także środowisko, które ułatwia wykorzystanie biblioteki i 
 
 ### Instalacja środowiska, wprowadzenie inne przydatne materiały:
 
-http://jug.put.poznan.pl/lab-ie-2/pl/
+http://jug.put.poznan.pl/lab-psio/
 
 ### Wprowadzenie
 
-Korzystając z instrukcji *Lab 10 - Qt - wstęp do GUI* z powyższego odnośnika, stwórz pierwszą aplikację okienkową i zapoznaj się z mechanizmem sygnałów i slotów.
+Korzystając z instrukcji *Lab 13 - Qt - wstęp do GUI* z powyższego odnośnika, stwórz pierwszą aplikację okienkową i zapoznaj się z mechanizmem sygnałów i slotów.
 
 ## ❗️Zadania❗️
 
